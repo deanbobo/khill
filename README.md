@@ -21,7 +21,7 @@ The software will calculate K-Hill for each distinct group_id.
 
 **-h, --help**      
 
->show this help message and exit
+>show the help message and exit
   
 **-d DIRECTORY, --directory DIRECTORY**
 >Directory of genomes (optional, but either --directory or --file_table must be provided)
