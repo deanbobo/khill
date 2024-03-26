@@ -37,12 +37,20 @@ def list_genomes(directory=None, file_table=None):
     if file_table:
         with open(file_table, 'r') as file:
             for line in file:
+                # Skip lines starting with '#'
+                if line.startswith('#'):
+                    continue
+
                 parts = line.strip().split('\t')
-                if len(parts) == 2:
-                    group_id, genome_path = parts
-                    if group_id not in group_genomes:
-                        group_genomes[group_id] = []
-                    group_genomes[group_id].append(genome_path)
+                # Check for the exact number of columns
+                if len(parts) != 2:
+                    print(f"Error: Incorrect number of columns in line: {line.strip()}. Expected 2 columns.")
+                    sys.exit(1)
+
+                group_id, genome_path = parts
+                if group_id not in group_genomes:
+                    group_genomes[group_id] = []
+                group_genomes[group_id].append(genome_path)
 
     # Process directory if provided
     if directory:
@@ -57,7 +65,6 @@ def list_genomes(directory=None, file_table=None):
                     group_genomes[default_group_id].append(genome_path)
 
     return group_genomes
-
 
 def check_input_files(groups):
     missing_files = []
