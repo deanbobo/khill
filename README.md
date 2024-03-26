@@ -3,7 +3,7 @@
 K-Hill is a method and software package that can quantify molecular diversity in pangenomes. The method draws on information theory (Shannon Diversity) to quantify richness and evenness of K-mers between genomes in groups of samples. The approach is computationally efficient - not relying on databases, alignments, or genome graphs. 
 
 This python script can be run two ways:
-1. with --directory which  will measure K-Hill in the "pangeome" which includes all fasta files in the specified directory.
+1. with --directory which  will measure K-Hill in a "pangeome" which includes all fasta files in the specified directory.
 2. with --file_table which allows for grouping of genomes to be measured separately.
 
 the file_table should have two columns. For example:
