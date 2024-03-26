@@ -6,12 +6,14 @@ This python script can be run two ways:
 1. with --directory which  will measure K-Hill in the "pangeome" which includes all fasta files in the specified directory.
 2. with --file_table which allows for grouping of genomes to be measured separately.
 
-the file_table should have two columns. For example.
-#group_id  fasta_file_path
-groupA  /home/james/file1.fa
-groupA  /home/james/file2.fa
-groupB  /home/james/file3.fa
-groupB  /home/james/file4.fa
+the file_table should have two columns. For example:
+
+| #group_id | fasta_file_path |
+| --- | --- |
+| groupA | /home/james/file1.fa |
+| groupA | /home/james/file2.fa |
+| groupB | /home/james/file3.fa |
+| groupB | /home/james/file4.fa |
 
 The software will calculate K-Hill for each distinct group_id.
 
