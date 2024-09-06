@@ -22,6 +22,9 @@ The software will calculate K-Hill for each distinct group_id.
 **-h, --help**      
 
 >show the help message and exit
+
+**-t, --threads**
+>number of threads to use. Default=4
   
 **-d DIRECTORY, --directory DIRECTORY**
 >Directory of genomes
