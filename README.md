@@ -81,6 +81,6 @@ The software will calculate K-Hill for each distinct group_id.
 >Force overwrite of the stats output file if it already exists.
 
 ## Citation
-https://www.medrxiv.org/content/10.1101/2022.06.23.22276807v3
+https://genome.cshlp.org/content/34/10/1651.abstract
 
 
